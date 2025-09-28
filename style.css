@@ -1,0 +1,179 @@
+/* --- VARIABLES Y ESTILOS GLOBALES --- */
+:root {
+    --primary-color: #2c3e50;   /* Azul oscuro */
+    --secondary-color: #3498db; /* Azul brillante */
+    --background-color: #ecf0f1; /* Gris claro */
+    --text-color: #555;
+    --light-text-color: #fff;
+    --card-background: #ffffff;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* --- ANIMACIÓN DE ENTRADA --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- CONTENEDOR PRINCIPAL (LAYOUT) --- */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* --- BARRA LATERAL (IZQUIERDA) --- */
+.sidebar {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 40px;
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.sidebar h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sidebar .subtitle {
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.sidebar h2 {
+    color: var(--light-text-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 12px;
+    color: var(--secondary-color);
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: var(--secondary-color);
+}
+
+/* --- CONTENIDO PRINCIPAL (DERECHA) --- */
+.main-content {
+    padding: 40px;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.main-content h2 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.main-content section {
+    margin-bottom: 40px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+    border-left: 3px solid var(--background-color);
+}
+
+.experience-item h3, .education-item h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.experience-item .date {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.main-content p {
+    margin: 5px 0;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+/* --- DISEÑO RESPONSIVE PARA MÓVILES --- */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+    .main-container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 25px;
+    }
+}
