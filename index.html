@@ -1,140 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Kevin Steve Mora Herrera</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f7fb;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 35px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin: 5px 0;
-    }
-    .container {
-      width: 85%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      margin-top: -40px;
-      position: relative;
-      z-index: 1;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 12px;
-    }
-    .contacto, .idiomas {
-      background: #f9fafc;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    .referencias li {
-      margin-bottom: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      color: #fff;
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Kevin Steve Mora Herrera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Kevin Steve Mora Herrera</h1>
-    <p>Quito, Ecuador</p>
-    <p>Email: <a href="mailto:kevinsmora64@gmail.com" style="color:#fff;">kevinsmora64@gmail.com</a> | Tel: 0981268295 - 0982850721</p>
-    <p>Estudiante de Big Data e Inteligencia de Negocios</p>
-  </header>
 
-  <div class="container">
-    <h2>Perfil Profesional</h2>
-    <p>
-      Tecnólogo en formación en Big Data e Inteligencia de Negocios con experiencia en proyectos de análisis de datos, visualización interactiva y optimización de procesos. Manejo herramientas como R, Power BI, SQL y MongoDB, con sólidos conocimientos en estadística aplicada, lo que me permite transformar datos en información valiosa para la toma de decisiones.
-    </p>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/150" alt="Foto de Kevin Mora" class="profile-pic">
+                <h1>Kevin Steve Mora Herrera</h1>
+                <p class="subtitle">Estudiante de Big Data e Inteligencia de Negocios</p>
+            </div>
 
-    <h2>Experiencia Relevante</h2>
-    <ul>
-      <li><strong>Proyecto de Análisis Interactivo del Agua Potable</strong><br>
-        Desarrollo de un sistema de monitoreo en tiempo real con dashboards dinámicos en R y bases de datos NoSQL (MongoDB), logrando mejorar la interpretación de datos de calidad de agua mediante gráficas de tendencias.
-      </li>
-      <li><strong>Ayudante de Operación – Bomi Group (UPS)</strong> | 2025<br>
-        Gestión de inventarios y procesos logísticos de productos médicos con ILMS y PDA. Aseguré precisión y trazabilidad de datos, contribuyendo al flujo eficiente de bodega.
-      </li>
-      <li><strong>Consorcio Green Globe</strong> | 2022–2023<br>
-        Análisis y control de procesos en tratamiento de aguas (químico y físico). Implementación de técnicas de filtración y análisis de laboratorio para optimizar eficiencias.
-      </li>
-      <li><strong>Pasantías – Novopan del Ecuador</strong> | 2019<br>
-        Soporte a sistemas informáticos: mantenimiento de servidores, cableado estructurado y soporte técnico.
-      </li>
-    </ul>
+            <div class="contact-section">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Quito, Ecuador</li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kevinsmora64@gmail.com">kevinsmora64@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> 0981268295</li>
+                     <li><i class="fa-brands fa-linkedin"></i> <a href="#">/tu-linkedin</a></li>
+                    <li><i class="fa-brands fa-github"></i> <a href="#">/tu-github</a></li>
+                </ul>
+            </div>
 
-    <h2>Educación</h2>
-    <ul>
-      <li><strong>Tecnología en Big Data e Inteligencia de Negocios</strong> – En curso (2025-2026), Instituto Tecnológico Superior Lendan, Quito</li>
-      <li><strong>Técnico en Aplicaciones Informáticas</strong> – 2019, Colegio Nacional Cumbayá, Quito</li>
-    </ul>
+            <div class="skills-section">
+                <h2>Habilidades Técnicas</h2>
+                <ul>
+                    <li><strong>Lenguajes:</strong> R, SQL, Java, C++, HTML, PHP</li>
+                    <li><strong>Bases de Datos:</strong> MongoDB, MySQL</li>
+                    <li><strong>Visualización:</strong> Power BI, RStudio, IBM SPSS</li>
+                    <li><strong>Gestión de Datos:</strong> GitHub, Excel avanzado</li>
+                </ul>
+            </div>
+            
+            <div class="languages-section">
+                <h2>Idiomas</h2>
+                <p><strong>Español:</strong> Nativo</p>
+                <p><strong>Inglés:</strong> Intermedio</p>
+            </div>
+        </aside>
 
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li><strong>Lenguajes:</strong> R, SQL, Java, C++, HTML, PHP</li>
-      <li><strong>Bases de Datos:</strong> MongoDB, MySQL</li>
-      <li><strong>Visualización y Análisis:</strong> Power BI, RStudio, IBM SPSS</li>
-      <li><strong>Gestión de Datos:</strong> GitHub, Excel avanzado</li>
-    </ul>
+        <main class="main-content">
+            <section>
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Tecnólogo en formación en Big Data e Inteligencia de Negocios con experiencia en proyectos de análisis de datos, visualización interactiva y optimización de procesos. Manejo herramientas como R, Power BI, SQL y MongoDB, con sólidos conocimientos en estadística aplicada, lo que me permite transformar datos en información valiosa para la toma de decisiones.
+                </p>
+            </section>
 
-    <div class="idiomas">
-      <h2>Idiomas</h2>
-      <ul>
-        <li>Español: Nativo</li>
-        <li>Inglés: Intermedio</li>
-      </ul>
+            <section>
+                <h2>Experiencia Relevante</h2>
+                <div class="experience-item">
+                    <h3>Proyecto de Análisis Interactivo del Agua Potable</h3>
+                    <p>Desarrollo de un sistema de monitoreo en tiempo real con dashboards dinámicos en R y bases de datos NoSQL (MongoDB), logrando mejorar la interpretación de datos de calidad de agua mediante gráficas de tendencias.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Ayudante de Operación – Bomi Group (UPS)</h3>
+                    <p class="date">2025</p>
+                    <p>Gestión de inventarios y procesos logísticos de productos médicos con ILMS y PDA. Aseguré precisión y trazabilidad de datos, contribuyendo al flujo eficiente de bodega.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Consorcio Green Globe</h3>
+                    <p class="date">2022 – 2023</p>
+                    <p>Análisis y control de procesos en tratamiento de aguas (químico y físico). Implementación de técnicas de filtración y análisis de laboratorio para optimizar eficiencias.</p>
+                </div>
+                 <div class="experience-item">
+                    <h3>Pasantías – Novopan del Ecuador</h3>
+                    <p class="date">2019</p>
+                    <p>Soporte a sistemas informáticos: mantenimiento de servidores, cableado estructurado y soporte técnico.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Educación</h2>
+                <div class="education-item">
+                    <h3>Tecnología en Big Data e Inteligencia de Negocios</h3>
+                    <p>Instituto Tecnológico Superior Lendan, Quito (En curso, 2025-2026)</p>
+                </div>
+                <div class="education-item">
+                    <h3>Técnico en Aplicaciones Informáticas</h3>
+                    <p>Colegio Nacional Cumbayá, Quito (2019)</p>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Referencias</h2>
+                <p>Disponibles bajo petición.</p>
+                 </section>
+        </main>
     </div>
 
-    <div class="referencias">
-      <h2>Referencias</h2>
-      <ul>
-        <li>Ing. Herman Pasternak - 0997063910</li>
-        <li>Ing. José Novoa - 0987651620</li>
-        <li>Ing. Sonia Quiroga - 0960194320</li>
-        <li>Ing. Danilo Naranjo - 0901091172</li>
-      </ul>
-    </div>
-  </div>
+    <footer>
+        <p>© 2025 Kevin Mora - CV Web</p>
+    </footer>
 
-  <footer>
-    <p>© 2025 Kevin Mora - CV Web</p>
-  </footer>
 </body>
 </html>
 
